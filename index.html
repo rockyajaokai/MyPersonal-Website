@@ -3,38 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Responsive Website of Rocky Aldi Abadi Bangun - Information Systems Student at Universitas Advent Indonesia (UNAI).">
-  <meta name="author" content="Rocky Aldi Abadi Bangun">
   <title>Home | Rocky Aldi Abadi Bangun - Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ======================================================================
-       SITE HEADER & NAVIGATION (Consistent across all pages)
-       ====================================================================== -->
+  <!-- Header dan Navigasi -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="site-logo">
-        <img src="images/profile.jpg" alt="Rocky Aldi Avatar" class="logo-avatar">
+        <img src="images/profile.jpg" alt="Rocky Aldi" class="logo-avatar">
         <div class="logo-text">
           <span class="logo-name">Rocky Aldi</span>
-          <span class="logo-tag">UNAI Student &bull; NIM 2582015</span>
+          <span class="logo-tag">UNAI &bull; NIM 2582015</span>
         </div>
       </a>
 
-      <!-- Mobile Navigation Hamburger Toggle -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <!-- Tombol Menu Mobile (Hamburger) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
         <span></span>
         <span></span>
       </label>
 
-      <!-- Navigation Links -->
-      <nav class="site-nav" aria-label="Main Navigation">
+      <!-- Navigasi -->
+      <nav class="site-nav">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="biodata.html" class="nav-link">Biodata</a></li>
           <li><a href="myHoliday.html" class="nav-link">My Holiday</a></li>
           <li><a href="contact.html" class="nav-link">Contact Me</a></li>
@@ -43,125 +39,78 @@
     </div>
   </header>
 
-  <!-- ======================================================================
-       MAIN CONTENT: HOME PAGE
-       ====================================================================== -->
+  <!-- Konten Utama -->
   <main class="container">
 
-    <!-- HERO SECTION -->
-    <section class="hero-section" aria-label="Personal Introduction">
+    <!-- Bagian Hero / Perkenalan -->
+    <section class="hero-section">
       <div class="hero-inner">
         
         <div class="hero-content">
-          <div class="status-pill" style="margin-bottom: 1rem;">
-            <span class="status-dot"></span>
-            Mahasiswa Aktif Sistem Informasi UNAI
-          </div>
+          <p class="hero-greeting">Selamat Datang di Website Saya</p>
           <h1 class="hero-name">Rocky Aldi Abadi Bangun</h1>
-          <p class="hero-subtitle">Information Systems Student &bull; Tech &amp; Esports Enthusiast</p>
+          <p class="hero-subtitle">Mahasiswa Sistem Informasi &bull; FTI UNAI</p>
           <p class="hero-desc">
-            Halo dan selamat datang di website pribadi saya! Saya adalah seorang mahasiswa program studi
-            <strong>Sistem Informasi</strong> di <strong>Fakultas Teknologi Informasi, Universitas Advent Indonesia (UNAI)</strong>. 
-            Saya memiliki minat mendalam dalam pengembangan web modern, eksplorasi teknologi digital, 
-            olahraga catur, dan dunia kompetitif gaming (esports). Melalui website ini, Anda dapat mengenal latar belakang akademik saya, 
-            melihat dokumentasi perjalanan liburan saya yang berkesan, serta terhubung langsung untuk kolaborasi dan komunikasi profesional.
+            Halo, perkenalkan nama saya <strong>Rocky Aldi Abadi Bangun</strong>, mahasiswa di program studi
+            <strong>Sistem Informasi, Fakultas Teknologi Informasi, Universitas Advent Indonesia (UNAI)</strong>. 
+            Website ini saya buat sebagai bagian dari proyek Mid-Semester mata kuliah Web Programming I untuk mempelajari 
+            pembuatan website yang rapi dan responsif. Di sini Anda dapat melihat data pribadi saya, 
+            dokumentasi kegiatan liburan saya, serta cara untuk menghubungi saya.
           </p>
 
-          <!-- Call to Action Buttons -->
+          <!-- Tombol Call-to-Action -->
           <div class="btn-group">
-            <a href="biodata.html" class="btn btn-primary">
-              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-              </svg>
-              Explore My Biodata
-            </a>
-            <a href="contact.html" class="btn btn-secondary">
-              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-              Get In Touch
-            </a>
+            <a href="biodata.html" class="btn btn-primary">Lihat Biodata</a>
+            <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
           </div>
         </div>
 
         <div class="hero-image-wrapper">
-          <img src="images/profile.jpg" alt="Photograph of Rocky Aldi Abadi Bangun" class="hero-img">
-          <div class="hero-badge-float">
-            <span>&#128083;</span> Student Portfolio
-          </div>
+          <img src="images/profile.jpg" alt="Foto Rocky Aldi Abadi Bangun" class="hero-img">
         </div>
 
       </div>
     </section>
 
-    <!-- WEBSITE HIGHLIGHTS / EXPLORATION CARDS -->
-    <section class="home-features" aria-label="Explore Website Sections">
-      <h2 class="section-title">
-        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-        </svg>
-        Jelajahi Halaman Website
-      </h2>
+    <!-- Bagian Menu Utama Website -->
+    <section class="home-features">
+      <h2 class="section-title">Halaman Website</h2>
 
       <div class="feature-grid">
 
-        <!-- Card 1: Biodata -->
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">
-            <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
-            </svg>
-          </div>
-          <h3>Biodata &amp; Profil Akademik</h3>
+        <!-- Kartu 1: Biodata -->
+        <div class="feature-card">
+          <h3>Biodata Diri</h3>
           <p>
-            Informasi lengkap mengenai identitas diri, foto profil berukuran proporsional 3:4, biografi personal,
-            hobi dan minat terstruktur, serta riwayat IPK semester di UNAI.
+            Informasi lengkap mengenai latar belakang saya, biografi singkat, hobi, serta riwayat nilai akademik di UNAI.
           </p>
-          <a href="biodata.html" class="feature-link">
-            Buka Biodata &rarr;
-          </a>
-        </article>
+          <a href="biodata.html" class="feature-link">Buka Halaman Biodata &rarr;</a>
+        </div>
 
-        <!-- Card 2: My Holiday -->
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true" style="background: #fdf2f8; color: #db2777; border-color: #fbcfe8;">
-            <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </div>
-          <h3>Galeri Liburan</h3>
+        <!-- Kartu 2: My Holiday -->
+        <div class="feature-card">
+          <h3>Pengalaman Liburan</h3>
           <p>
-            Dokumentasi visual pengalaman berlibur di Batam, Bali, pendakian Gunung Buthak Jawa Timur, Singapura, hingga kemenangan turnamen game yang disajikan dalam galeri foto responsif.
+            Kumpulan foto-foto momen liburan saya di Batam, Bali, pendakian Gunung Buthak di Jawa Timur, dan Singapura.
           </p>
-          <a href="myHoliday.html" class="feature-link" style="color: #db2777;">
-            Lihat Galeri Foto &rarr;
-          </a>
-        </article>
+          <a href="myHoliday.html" class="feature-link">Buka Galeri Foto &rarr;</a>
+        </div>
 
-        <!-- Card 3: Contact Me -->
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true" style="background: #fffbeb; color: #d97706; border-color: #fde68a;">
-            <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-            </svg>
-          </div>
-          <h3>Hubungi Saya</h3>
+        <!-- Kartu 3: Contact Me -->
+        <div class="feature-card">
+          <h3>Kontak Saya</h3>
           <p>
-            Formulir pesan interaktif dengan validasi HTML, tautan email mailto resmi, profil Instagram aktif (@aldi.bgn), serta repositori GitHub untuk kebutuhan diskusi atau kolaborasi.
+            Informasi kontak langsung, tautan Instagram, akun GitHub, dan formulir pesan untuk berkomunikasi.
           </p>
-          <a href="contact.html" class="feature-link" style="color: #d97706;">
-            Kirim Pesan &rarr;
-          </a>
-        </article>
+          <a href="contact.html" class="feature-link">Kirim Pesan &rarr;</a>
+        </div>
 
       </div>
     </section>
 
   </main>
 
-  <!-- ======================================================================
-       SITE FOOTER (Consistent across all pages)
-       ====================================================================== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-grid">
@@ -171,45 +120,38 @@
           <p>
             Mahasiswa Program Studi Sistem Informasi<br>
             Fakultas Teknologi Informasi<br>
-            <strong>Universitas Advent Indonesia (UNAI)</strong><br>
+            Universitas Advent Indonesia<br>
             NIM: 2582015
           </p>
           <div class="footer-social-icons">
-            <a href="mailto:2582015@unai.edu" class="social-badge" title="Send Email">
-              <span>&#9993;</span> Email
-            </a>
-            <a href="https://www.instagram.com/aldi.bgn" target="_blank" rel="noopener noreferrer" class="social-badge" title="Instagram Profile">
-              <span>&#9679;</span> @aldi.bgn
-            </a>
-            <a href="https://github.com/rockyajaokai" target="_blank" rel="noopener noreferrer" class="social-badge" title="GitHub Profile">
-              <span>&lt;/&gt;</span> GitHub
-            </a>
+            <a href="mailto:2582015@unai.edu" class="social-badge">Email</a>
+            <a href="https://www.instagram.com/aldi.bgn" target="_blank" rel="noopener noreferrer" class="social-badge">Instagram</a>
+            <a href="https://github.com/rockyajaokai" target="_blank" rel="noopener noreferrer" class="social-badge">GitHub</a>
           </div>
         </div>
 
         <div class="footer-col">
-          <h3>Navigasi Cepat</h3>
+          <h3>Navigasi</h3>
           <ul class="footer-links">
-            <li><a href="index.html">&bull; Home</a></li>
-            <li><a href="biodata.html">&bull; Biodata Diri</a></li>
-            <li><a href="myHoliday.html">&bull; Galeri Liburan</a></li>
-            <li><a href="contact.html">&bull; Hubungi Saya</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="myHoliday.html">My Holiday</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h3>Tautan Akademik</h3>
+          <h3>Tautan Kampus</h3>
           <ul class="footer-links">
-            <li><a href="https://fti.unai.edu" target="_blank" rel="noopener noreferrer">&bull; Fakultas Teknologi Informasi UNAI</a></li>
-            <li><a href="https://unai.edu" target="_blank" rel="noopener noreferrer">&bull; Universitas Advent Indonesia</a></li>
-            <li><a href="https://github.com/rockyajaokai/MyPersonal-Website" target="_blank" rel="noopener noreferrer">&bull; Repository Proyek Ini</a></li>
+            <li><a href="https://fti.unai.edu" target="_blank" rel="noopener noreferrer">Fakultas Teknologi Informasi UNAI</a></li>
+            <li><a href="https://unai.edu" target="_blank" rel="noopener noreferrer">Universitas Advent Indonesia</a></li>
           </ul>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Rocky Aldi Abadi Bangun (NIM: 2582015). All Rights Reserved.</p>
+        <p>&copy; 2026 Rocky Aldi Abadi Bangun | NIM: 2582015</p>
         <p>Mid-Semester Project &bull; Web Programming I &bull; FTI UNAI</p>
       </div>
     </div>
