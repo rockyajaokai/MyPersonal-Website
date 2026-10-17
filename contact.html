@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Rocky Aldi Abadi Bangun - Information Systems Student at Universitas Advent Indonesia (UNAI). Email, Instagram, and Contact Form.">
+  <meta name="author" content="Rocky Aldi Abadi Bangun">
+  <title>Contact Me | Rocky Aldi Abadi Bangun - Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SITE HEADER & NAVIGATION (Consistent across all pages)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/profile.jpg" alt="Rocky Aldi Avatar" class="logo-avatar">
+        <div class="logo-text">
+          <span class="logo-name">Rocky Aldi</span>
+          <span class="logo-tag">UNAI Student &bull; NIM 2582015</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="biodata.html" class="nav-link">Biodata</a></li>
+          <li><a href="myHoliday.html" class="nav-link">My Holiday</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT: CONTACT ME PAGE
+       ====================================================================== -->
+  <main class="container">
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <h1>Contact Me</h1>
+      <p class="page-subtitle">
+        Pintu komunikasi selalu terbuka untuk pertanyaan akademik, diskusi teknologi, 
+        peluang kolaborasi proyek, maupun sekadar menyapa dan berteman.
+      </p>
+    </header>
+
+    <!-- CONTACT INTRODUCTION CARD -->
+    <section class="contact-intro-card" aria-label="Welcoming Message">
+      <h2 class="section-title" style="justify-content: center; border-bottom: none; margin-bottom: 0.5rem;">
+        Mari Terhubung &amp; Berkolaborasi
+      </h2>
+      <p>
+        Terima kasih telah meluangkan waktu mengunjungi website pribadi saya! Apakah Anda memiliki pertanyaan seputar proyek perkuliahan, 
+        tertarik berdiskusi tentang sistem informasi dan pemrograman web, atau ingin mengajak bermain catur dan esport? 
+        Silakan hubungi saya melalui formulir di bawah ini atau melalui saluran kontak resmi dan media sosial saya. 
+        Saya akan dengan senang hati merespons pesan Anda secepat mungkin.
+      </p>
+    </section>
+
+    <!-- CONTACT GRID (ASIDE INFO + FORM) -->
+    <div class="contact-grid">
+
+      <!-- ASIDE: CONTACT INFORMATION -->
+      <aside class="contact-info-card" aria-label="Direct Contact Channels">
+        <h3>Informasi Kontak</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Anda dapat menghubungi saya langsung melalui saluran-saluran berikut:
+        </p>
+
+        <div class="contact-methods">
+
+          <!-- Method 1: Email (mailto) -->
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">&#9993;</div>
+            <div class="contact-item-details">
+              <span class="label">Email Resmi Mahasiswa</span>
+              <a href="mailto:2582015@unai.edu" class="value" title="Kirim email ke 2582015@unai.edu">
+                2582015@unai.edu
+              </a>
+            </div>
+          </div>
+
+          <!-- Method 2: Instagram Profile -->
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">&#128247;</div>
+            <div class="contact-item-details">
+              <span class="label">Instagram Profil</span>
+              <a href="https://www.instagram.com/aldi.bgn" target="_blank" rel="noopener noreferrer" class="value" title="Buka Instagram @aldi.bgn">
+                @aldi.bgn
+              </a>
+            </div>
+          </div>
+
+          <!-- Method 3: GitHub Repository -->
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">&lt;/&gt;</div>
+            <div class="contact-item-details">
+              <span class="label">GitHub Repository</span>
+              <a href="https://github.com/rockyajaokai" target="_blank" rel="noopener noreferrer" class="value" title="Kunjungi Profil GitHub">
+                github.com/rockyajaokai
+              </a>
+            </div>
+          </div>
+
+          <!-- Method 4: Campus Affiliation -->
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">&#127979;</div>
+            <div class="contact-item-details">
+              <span class="label">Kampus Perkuliahan</span>
+              <span class="value" style="font-size: 0.95rem;">
+                Universitas Advent Indonesia (UNAI)<br>
+                Jl. Kolonel Masturi No. 288, Parongpong, Bandung Barat, Jawa Barat
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- SECTION: CONTACT FORM -->
+      <section class="contact-form-card" aria-label="Send a Direct Message Form">
+        <h3>Kirimkan Pesan Anda</h3>
+        <p class="form-subtitle">
+          Semua bidang bertanda <span style="color: #ef4444; font-weight: bold;">*</span> wajib diisi. Pesan akan diteruskan melalui komposisi email.
+        </p>
+
+        <!-- Form with mailto action, post method, plain text enctype and full HTML validation -->
+        <form class="contact-form" action="mailto:2582015@unai.edu" method="post" enctype="text/plain">
+          
+          <!-- Full Name Input -->
+          <div class="form-group">
+            <label for="fullname">Nama Lengkap <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="fullname" 
+              name="fullname" 
+              class="form-control" 
+              placeholder="Masukkan nama lengkap Anda..." 
+              required 
+              minlength="3" 
+              autocomplete="name">
+          </div>
+
+          <!-- Email Address Input -->
+          <div class="form-group">
+            <label for="email">Alamat Email <span class="required">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-control" 
+              placeholder="contoh: nama@domain.com" 
+              required 
+              autocomplete="email">
+          </div>
+
+          <!-- Subject Input -->
+          <div class="form-group">
+            <label for="subject">Subjek Pesan <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              class="form-control" 
+              placeholder="Contoh: Pertanyaan Proyek / Kolaborasi" 
+              required 
+              minlength="4">
+          </div>
+
+          <!-- Message Textarea -->
+          <div class="form-group">
+            <label for="message">Pesan Anda <span class="required">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-control" 
+              rows="5" 
+              placeholder="Tuliskan pesan, saran, atau pertanyaan Anda di sini secara rinci..." 
+              required 
+              minlength="10"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 0.85rem 2rem;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            </svg>
+            Send Message
+          </button>
+
+        </form>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ======================================================================
+       SITE FOOTER (Consistent across all pages)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <h3>Rocky Aldi Abadi Bangun</h3>
+          <p>
+            Mahasiswa Program Studi Sistem Informasi<br>
+            Fakultas Teknologi Informasi<br>
+            <strong>Universitas Advent Indonesia (UNAI)</strong><br>
+            NIM: 2582015
+          </p>
+          <div class="footer-social-icons">
+            <a href="mailto:2582015@unai.edu" class="social-badge" title="Send Email">
+              <span>&#9993;</span> Email
+            </a>
+            <a href="https://www.instagram.com/aldi.bgn" target="_blank" rel="noopener noreferrer" class="social-badge" title="Instagram Profile">
+              <span>&#9679;</span> @aldi.bgn
+            </a>
+            <a href="https://github.com/rockyajaokai" target="_blank" rel="noopener noreferrer" class="social-badge" title="GitHub Profile">
+              <span>&lt;/&gt;</span> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigasi Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">&bull; Home</a></li>
+            <li><a href="biodata.html">&bull; Biodata Diri</a></li>
+            <li><a href="myHoliday.html">&bull; Galeri Liburan</a></li>
+            <li><a href="contact.html">&bull; Hubungi Saya</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Tautan Akademik</h3>
+          <ul class="footer-links">
+            <li><a href="https://fti.unai.edu" target="_blank" rel="noopener noreferrer">&bull; Fakultas Teknologi Informasi UNAI</a></li>
+            <li><a href="https://unai.edu" target="_blank" rel="noopener noreferrer">&bull; Universitas Advent Indonesia</a></li>
+            <li><a href="https://github.com/rockyajaokai/MyPersonal-Website" target="_blank" rel="noopener noreferrer">&bull; Repository Proyek Ini</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rocky Aldi Abadi Bangun (NIM: 2582015). All Rights Reserved.</p>
+        <p>Mid-Semester Project &bull; Web Programming I &bull; FTI UNAI</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

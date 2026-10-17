@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Holiday Photo Gallery of Rocky Aldi Abadi Bangun - Exploring Batam, Bali, East Java, and Singapore. Responsive Flexbox layout.">
+  <meta name="author" content="Rocky Aldi Abadi Bangun">
+  <title>My Holiday | Rocky Aldi Abadi Bangun - Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SITE HEADER & NAVIGATION (Consistent across all pages)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/profile.jpg" alt="Rocky Aldi Avatar" class="logo-avatar">
+        <div class="logo-text">
+          <span class="logo-name">Rocky Aldi</span>
+          <span class="logo-tag">UNAI Student &bull; NIM 2582015</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="biodata.html" class="nav-link">Biodata</a></li>
+          <li><a href="myHoliday.html" class="nav-link active" aria-current="page">My Holiday</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT: MY HOLIDAY PAGE
+       ====================================================================== -->
+  <main class="container">
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <h1>My Holiday Experiences</h1>
+      <p class="page-subtitle">
+        Dokumentasi visual perjalanan liburan, eksplorasi alam, wisata budaya, 
+        serta momen kebersamaan tak terlupakan bersama keluarga dan sahabat.
+      </p>
+    </header>
+
+    <!-- HOLIDAY INTRODUCTION PARAGRAPH -->
+    <section class="holiday-intro-card" aria-label="Holiday Story and Introduction">
+      <h2 class="section-title">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        Cerita Perjalanan Liburan Saya
+      </h2>
+      <p>
+        Bagi saya, masa liburan kuliah adalah kesempatan berharga untuk menyegarkan pikiran, mempererat ikatan kekeluargaan, 
+        serta membangun persahabatan yang bermakna. Mulai dari menikmati deburan ombak dan hangatnya pasir putih di 
+        <strong>Pantai New Melur dan Pantai Viovio (Batam)</strong> bersama rekan pemuda gereja, merasakan keanggunan budaya tradisional di 
+        <strong>Desa Panglipuran dan GWK (Bali)</strong>, menaklukkan tantangan pendakian <strong>Gunung Buthak (2868 MDPL, Jawa Timur)</strong> 
+        bersama teman-teman UNAI, berselancar di Pantai Canggu, menjelajahi keindahan arsitektur modern di <strong>Singapura</strong>, hingga 
+        momen bangga meraih podium juara pada kompetisi game esport. Setiap foto di bawah ini merangkum kenangan indah yang senantiasa 
+        menginspirasi saya untuk terus bersyukur dan bersemangat menjalani hari esok.
+      </p>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION (CSS FLEXBOX LAYOUT - MANDATORY) -->
+    <section class="gallery-section" aria-label="Responsive Flexbox Photo Gallery">
+      <h2 class="section-title">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        Galeri Foto Liburan (10 Koleksi Foto Berkesan)
+      </h2>
+
+      <!-- Flexbox Container with flex-wrap, justify-content, align-items, and gap -->
+      <div class="gallery-flex-container">
+
+        <!-- Photo 1 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-1.jpg" alt="Rocky Aldi berenang bersama pemuda gereja di Pantai New Melur" class="gallery-img">
+            <span class="gallery-number-tag">Foto 01</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127754; Batam, Kepulauan Riau</span>
+            <h3 class="caption-title">Pantai New Melur</h3>
+            <p class="caption-desc">Di Pantai New Melur sama pemuda dari gereja menikmati suasana sore dan berenang bersama.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 2 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-2.jpg" alt="Rocky Aldi bersama kakak dan ibu memakai pakaian adat Bali di Desa Panglipuran" class="gallery-img">
+            <span class="gallery-number-tag">Foto 02</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127963; Bangli, Bali</span>
+            <h3 class="caption-title">Desa Adat Panglipuran</h3>
+            <p class="caption-desc">Di Desa Panglipuran, Bali bersama kakak dan ibu dengan mengenakan pakaian adat khas Bali.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 3 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-3.jpg" alt="Puncak Gunung Buthak 2868 MDPL bersama kakak dan sahabat mahasiswa UNAI" class="gallery-img">
+            <span class="gallery-number-tag">Foto 03</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#9968; Jawa Timur</span>
+            <h3 class="caption-title">Gunung Buthak (2868 MDPL)</h3>
+            <p class="caption-desc">Di Gunung Buthak, Jawa Timur sama kakak dan teman dari UNAI berhasil mencapai puncak bersama.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 4 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-4.jpg" alt="Bermain selancar memegang papan surfing di Pantai Canggu Bali bersama kakak" class="gallery-img">
+            <span class="gallery-number-tag">Foto 04</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127940; Badung, Bali</span>
+            <h3 class="caption-title">Pantai Canggu</h3>
+            <p class="caption-desc">Bermain selancar di Pantai Canggu, Bali bersama kakak mencoba ombak dan olahraga air seru.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 5 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-5.jpg" alt="Rocky Aldi bersama saudara di Jewel Changi Airport Singapura" class="gallery-img">
+            <span class="gallery-number-tag">Foto 05</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#9992; Jewel Changi, Singapura</span>
+            <h3 class="caption-title">Jewel Changi Airport</h3>
+            <p class="caption-desc">Di Singapura bersama keluarga mengunjungi taman indoor yang megah di Jewel Changi Airport.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 6 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-6.jpg" alt="Foto keluarga di depan istana Far Far Away Universal Studios Singapore" class="gallery-img">
+            <span class="gallery-number-tag">Foto 06</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127914; Sentosa Island, Singapura</span>
+            <h3 class="caption-title">Universal Studios Singapore</h3>
+            <p class="caption-desc">Di Singapura bersama keluarga berfoto ria di depan istana megah Universal Studios Singapore.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 7 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-7.jpg" alt="Selfie bersama sahabat persekutuan gereja di Pantai Viovio Batam" class="gallery-img">
+            <span class="gallery-number-tag">Foto 07</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127774; Batam, Kepulauan Riau</span>
+            <h3 class="caption-title">Pantai Viovio</h3>
+            <p class="caption-desc">Di Pantai Viovio, Batam sama teman gereja menikmati hangatnya matahari sore di tepi pantai.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 8 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-8.jpg" alt="Penyerahan piala dan sertifikat Juara 3 Korinda Cup 1.0 Mobile Legends" class="gallery-img">
+            <span class="gallery-number-tag">Foto 08</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127942; Esports Tournament</span>
+            <h3 class="caption-title">Korinda Cup 1.0</h3>
+            <p class="caption-desc">Mengikuti turnamen game dan juara: berhasil membawa pulang gelar Juara 3 Korinda Cup 1.0 Mobile Legends.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 9 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-9.jpg" alt="Rocky Aldi bersama ibu, kakak, dan seniman penari di GWK Bali" class="gallery-img">
+            <span class="gallery-number-tag">Foto 09</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#127917; Ungasan, Bali</span>
+            <h3 class="caption-title">Garuda Wisnu Kencana (GWK)</h3>
+            <p class="caption-desc">Di GWK, Bali bersama ibu dan kakak menyaksikan keindahan budaya dan berfoto dengan seniman tari.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 10 -->
+        <figure class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img src="images/holiday-10.jpg" alt="Selfie akrab bersama turis asal Belanda di kawah belerang" class="gallery-img">
+            <span class="gallery-number-tag">Foto 10</span>
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="location-tag">&#9832; Kawah Wisata Alam</span>
+            <h3 class="caption-title">Kawah Alam &amp; Teman Mancanegara</h3>
+            <p class="caption-desc">Di kawah ibu dan berselfie dengan bule Belanda yang ramah saat menikmati panorama kawah yang memukau.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SITE FOOTER (Consistent across all pages)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <h3>Rocky Aldi Abadi Bangun</h3>
+          <p>
+            Mahasiswa Program Studi Sistem Informasi<br>
+            Fakultas Teknologi Informasi<br>
+            <strong>Universitas Advent Indonesia (UNAI)</strong><br>
+            NIM: 2582015
+          </p>
+          <div class="footer-social-icons">
+            <a href="mailto:2582015@unai.edu" class="social-badge" title="Send Email">
+              <span>&#9993;</span> Email
+            </a>
+            <a href="https://www.instagram.com/aldi.bgn" target="_blank" rel="noopener noreferrer" class="social-badge" title="Instagram Profile">
+              <span>&#9679;</span> @aldi.bgn
+            </a>
+            <a href="https://github.com/rockyajaokai" target="_blank" rel="noopener noreferrer" class="social-badge" title="GitHub Profile">
+              <span>&lt;/&gt;</span> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigasi Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">&bull; Home</a></li>
+            <li><a href="biodata.html">&bull; Biodata Diri</a></li>
+            <li><a href="myHoliday.html">&bull; Galeri Liburan</a></li>
+            <li><a href="contact.html">&bull; Hubungi Saya</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Tautan Akademik</h3>
+          <ul class="footer-links">
+            <li><a href="https://fti.unai.edu" target="_blank" rel="noopener noreferrer">&bull; Fakultas Teknologi Informasi UNAI</a></li>
+            <li><a href="https://unai.edu" target="_blank" rel="noopener noreferrer">&bull; Universitas Advent Indonesia</a></li>
+            <li><a href="https://github.com/rockyajaokai/MyPersonal-Website" target="_blank" rel="noopener noreferrer">&bull; Repository Proyek Ini</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rocky Aldi Abadi Bangun (NIM: 2582015). All Rights Reserved.</p>
+        <p>Mid-Semester Project &bull; Web Programming I &bull; FTI UNAI</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
